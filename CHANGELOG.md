@@ -1,5 +1,38 @@
 # Changelog
 
+## v3.4.0-rc2 (2022-08-18)
+
+ * [6e8d1629d](https://github.com/argoproj/argo-workflows/commit/6e8d1629d9eebf78dce07f180ee99a233e422a80) fix: Artifact panel crashes when viewing artifacts. Fixes #9391 (#9392)
+ * [aa23a9ec8](https://github.com/argoproj/argo-workflows/commit/aa23a9ec8b9fc95593fdc41e1632412542a9c050) fix: Exit handle and Lifecycle hook to access {steps/tasks status} (#9229)
+ * [74cdf5d87](https://github.com/argoproj/argo-workflows/commit/74cdf5d870cc4d0b5576e6d78da7a6fde6a1be99) fix: improper selfLinks for cluster-scoped resources. Fixes #9320 (#9375)
+ * [f53d4834a](https://github.com/argoproj/argo-workflows/commit/f53d4834a208f39797637d7fad744caf0540cff8) fix: Panic on nill pointer when running a workflow with restricted parallelism (#9385)
+ * [c756291f7](https://github.com/argoproj/argo-workflows/commit/c756291f701296b36411ccdd639a965a302a5af8) fix: removed error check which prevented deleting successful artGC wfs.  (#9383)
+ * [81e3d23e7](https://github.com/argoproj/argo-workflows/commit/81e3d23e730d80f24c90feb283fa3ff3b358e215) chore(deps): bump google.golang.org/api from 0.91.0 to 0.93.0 (#9381)
+ * [62b0db982](https://github.com/argoproj/argo-workflows/commit/62b0db9822ef93732544667739b33c1d9792ccf9) fix(ui): Correctly show icons in DAG. Fixes #9372 & #9373 (#9378)
+ * [47f59c050](https://github.com/argoproj/argo-workflows/commit/47f59c050ed579cdf9e01eddf0f388ac52fe5713) chore(deps): bump cloud.google.com/go/storage from 1.24.0 to 1.25.0 (#9357)
+ * [65670a402](https://github.com/argoproj/argo-workflows/commit/65670a402b1e9a96d246fd2ee363dd27a7f3149b) fix: Fix blank workflow details page after workflow submission (#9377)
+ * [6d08098a8](https://github.com/argoproj/argo-workflows/commit/6d08098a887c701cfffb2ea57f0391d6f7f5d489) feat: add argo delete --force. Fixes #9315. (#9321)
+ * [12466b7c9](https://github.com/argoproj/argo-workflows/commit/12466b7c9138052150afa6e0e81964d91a0538f5) fix: Retry for http timeout error. Fixes #9271 (#9335)
+ * [1b252fd33](https://github.com/argoproj/argo-workflows/commit/1b252fd33c8e456af0f6ed437b4f74a6d8cb46e7) chore(deps-dev): bump sass from 1.54.3 to 1.54.4 in /ui (#9359)
+ * [3f56a74dd](https://github.com/argoproj/argo-workflows/commit/3f56a74dd44e6e28da5bf2fc28cf03bae9b9f5c1) chore(deps-dev): bump webpack-dev-server from 4.9.3 to 4.10.0 in /ui (#9358)
+ * [fd08b0339](https://github.com/argoproj/argo-workflows/commit/fd08b0339506f8f11288393061cf8c2eb155403a) fix: ArtifactGC e2e test was looking for the wrong artifact names (#9353)
+ * [b430180d2](https://github.com/argoproj/argo-workflows/commit/b430180d275adac05d64b82613134b926d4405f1) fix: Deleted pods are not tracked correctly when retrying workflow (#9340)
+ * [e12c697b7](https://github.com/argoproj/argo-workflows/commit/e12c697b7be2547cdffd18c73bf39e10dfa458f0) feat: fix bugs in retryWorkflow if failed pod node has children nodes. Fix #9244 (#9285)
+ * [61f252f1d](https://github.com/argoproj/argo-workflows/commit/61f252f1d2083e5e9f262d0acd72058571e27708) fix: TestWorkflowStepRetry's comment accurately reflects what it does. (#9234)
+
+### Contributors
+
+ * Alex Collins
+ * Dillen Padhiar
+ * Julie Vogelman
+ * Kyle Wong
+ * Robert Kotcher
+ * Saravanan Balasubramanian
+ * Yuan Tang
+ * dependabot[bot]
+ * jingkai
+ * smile-luobin
+
 ## v3.4.0-rc1 (2022-08-09)
 
  * [f481e3b74](https://github.com/argoproj/argo-workflows/commit/f481e3b7444eb9cbb5c4402a27ef209818b1d817) feat: fix workflow hangs during executeDAGTask. Fixes #6557 (#8992)
